@@ -1,4 +1,5 @@
 <?php
+
 /**
 * 2007-2014 PrestaShop
 *
@@ -35,7 +36,7 @@ class Desjardins extends PaymentModule
 	{
 		$this->name = 'desjardins';
 		$this->tab = 'payments_gateways';
-		$this->version = '0.3.11';
+		$this->version = '0.3.13';
 		$this->author = 'PrestaShop';
 		$this->need_instance = 0;
 		$this->bootstrap = true;
@@ -45,7 +46,7 @@ class Desjardins extends PaymentModule
 		parent::__construct();
 
 		$this->displayName = $this->l('Desjardins');
-		$this->description = $this->l('Accept payments by Credit Card with Desjardins (Visa, Mastercard, Amex, Discover and Diners Club)');
+		$this->description = $this->l('Accept payments by Credit Card with Desjardins (Visa, Mastercard and Amex)');
 
 	}
 
@@ -65,6 +66,7 @@ class Desjardins extends PaymentModule
 	{
 		/* Loading CSS and JS files */
 		$this->context->controller->addCSS(array($this->_path.'/css/desjardins.css'));
+		$this->context->controller->addJS($this->_path.'js/desjardins.js');
 
 		$output = '';
 		if (Tools::isSubmit('submitDesjardins'))
