@@ -36,7 +36,7 @@ class Desjardins extends PaymentModule
 	{
 		$this->name = 'desjardins';
 		$this->tab = 'payments_gateways';
-		$this->version = '0.3.13';
+		$this->version = '0.3.14';
 		$this->author = 'PrestaShop';
 		$this->need_instance = 0;
 		$this->bootstrap = true;
