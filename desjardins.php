@@ -242,13 +242,16 @@ class Desjardins extends PaymentModule
 
 	public function hookOrderConfirmation($params)
 	{
-		if (!Tools::getIsset($params['objOrder']) || ($params['objOrder']->module != $this->name))
-				return false;
+		if (!isset($params['objOrder']) || ($params['objOrder']->module != $this->name))
+			return false;
 
-		if ($params['objOrder'] && Validate::isLoadedObject($params['objOrder']) && Tools::getIsset($params['objOrder']->valid))
-				$this->smarty->assign('desjardins_order',
-					array('reference' => Tools::getIsset($params['objOrder']->reference) ? $params['objOrder']->reference : '#'.sprintf('%06d',
-								$params['objOrder']->id), 'valid' => $params['objOrder']->valid));
+		if ($params['objOrder'] && Validate::isLoadedObject($params['objOrder']) && isset($params['objOrder']->valid)) {
+			$this->smarty->assign('desjardins_order',
+				array(
+					'reference' => isset($params['objOrder']->reference) ? $params['objOrder']->reference : '#' . sprintf('%06d',
+							$params['objOrder']->id), 'valid' => $params['objOrder']->valid)
+			);
+		}
 
 		return $this->display(__FILE__, 'order-confirmation.tpl');
 	}
