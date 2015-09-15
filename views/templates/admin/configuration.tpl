@@ -63,7 +63,7 @@
 			<strong>{l s='Complete your Setup' mod='desjardins'}</strong>
 			<br />
 			<br />
-			{l s='Please e-mail Desjardins at' mod='desjardins'} <a href="mailto:{l s='online_support@scd.desjardins.com' mod='desjardins'}">{l s='online_support@scd.desjardins.com' mod='desjardins'}</a> {l s='and provide them the following URL as your "Return Interface URL" and merchant TPE number' mod='desjardins'}
+			{l s='Please e-mail Desjardins at' mod='desjardins'} <a href="mailto:{l s='support@desjardins.monetico-services.com' mod='desjardins'}">{l s='support@desjardins.monetico-services.com' mod='desjardins'}</a> {l s='and provide them the following URL as your "Return Interface URL" and merchant TPE number' mod='desjardins'}
 			<br />
 			<br />
 			<input type="text" onclick="$(this).select()" value="{$desjardins_url|escape:html:'UTF-8'}" />
