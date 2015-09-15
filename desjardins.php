@@ -217,8 +217,8 @@ class Desjardins extends PaymentModule
 		array('id_cart' => (int)$this->context->cart->id, 'key' => $this->context->customer->secure_key, 'id_module' => $this->id));
 		$params['url_retour_err'] = $params['url_retour_ok'];
 		$params['MAC'] = $this->generateHash($params);
-		$params['api_url'] = Configuration::get('DESJARDINS_MODE') ? 'https://paiement.e-i.com/desjardins/paiement.cgi' :
-		'https://paiement.e-i.com/desjardins/test/paiement.cgi';
+		$params['api_url'] = Configuration::get('DESJARDINS_MODE') ? 'https://p.monetico-services.com/paiement.cgi' :
+		'https://p.monetico-services.com/test/paiement.cgi';
 
 		$this->smarty->assign('desjardins_params', $params);
 
