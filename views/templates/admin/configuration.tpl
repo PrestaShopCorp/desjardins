@@ -25,14 +25,14 @@
  *}
 <div class="desjardins">
 	<div class="desjardins-header">
-		<a rel="external" href="http://www.prestashop.com/{if $admin_lang == 'fr'}fr{else}en{/if}/industry-partners/payment/desjardins#contact" target="_blank" class="L desjardins-logo"><img alt="" src="{$module_dir|escape:html:'UTF-8'}/img/desjardins_{$admin_lang|escape:html:'UTF-8'}.png" /></a>
+		<a rel="external" href="{if $admin_lang == 'fr'}https://agreementexpress.net/CustomerSites/Desjardins/?OfferID=Monetico%20Payment%20-%20Turnkey%20Package&PartnerID=Prestashop&ProductID=Web&i18nLang=fr{else}https://agreementexpress.net/CustomerSites/Desjardins/?OfferID=Monetico%20Payment%20-%20Turnkey%20Package&PartnerID=Prestashop&ProductID=Web&i18nLang=en{/if}" target="_blank" class="L desjardins-logo"><img alt="" src="{$module_dir|escape:html:'UTF-8'}/img/desjardins_{$admin_lang|escape:html:'UTF-8'}.png" /></a>
 		<span class="desjardins-intro L">
 			<h1>{l s='ENJOY A TURNKEY SOLUTION WITH DESJARDINS! ' mod='desjardins'}</h1>
 			<p class="H3 L">
 				{l s='With Desjardins and PrestaShop, all it takes is a few clicks to integrate payment into your online store. No technical know-how is required with this turnkey solution because it\'s pre-installed in PrestaShop tools!' mod='desjardins'}
 			</p>
 		</span>
-		<a class="desjardins-create-btn R" rel="external" href="http://www.prestashop.com/{if $admin_lang == 'fr'}fr{else}en{/if}/industry-partners/payment/desjardins#contact" target="_blank"><span>{l s='Create your account' mod='desjardins'}</span></a>
+		<a class="desjardins-create-btn R" rel="external" href="{if $admin_lang == 'fr'}https://agreementexpress.net/CustomerSites/Desjardins/?OfferID=Monetico%20Payment%20-%20Turnkey%20Package&PartnerID=Prestashop&ProductID=Web&i18nLang=fr{else}https://agreementexpress.net/CustomerSites/Desjardins/?OfferID=Monetico%20Payment%20-%20Turnkey%20Package&PartnerID=Prestashop&ProductID=Web&i18nLang=en{/if}" target="_blank"><span>{l s='Create your account' mod='desjardins'}</span></a>
 	</div>
 	<div class="desjardins-content">
 		<div class="desjardins-leftCol">
@@ -44,7 +44,7 @@
 				<li>{l s='Having access to value-added management tools.' mod='desjardins'}</li>
 				<li>{l s='Enjoying excellent customer service.' mod='desjardins'}</li>
 			</ul>
-			<a href="http://www.prestashop.com/{if $admin_lang == 'fr'}fr{else}en{/if}/industry-partners/payment/desjardins#contact" class="desjardins-link" target="_blank" rel="external">{l s='Create an account' mod='desjardins'}</a>
+			<a rel="external" href="{if $admin_lang == 'fr'}https://agreementexpress.net/CustomerSites/Desjardins/?OfferID=Monetico%20Payment%20-%20Turnkey%20Package&PartnerID=Prestashop&ProductID=Web&i18nLang=fr{else}https://agreementexpress.net/CustomerSites/Desjardins/?OfferID=Monetico%20Payment%20-%20Turnkey%20Package&PartnerID=Prestashop&ProductID=Web&i18nLang=en{/if}" class="desjardins-link" target="_blank" rel="external">{l s='Create an account' mod='desjardins'}</a>
 
 			<div style="clear: right"></div>
 			<p class="H3">{l s='ENJOY A TURNKEY SOLUTION WITH DESJARDINS!' mod='desjardins'}</p>
